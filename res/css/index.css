@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  margin-bottom: 100px;
+  width: 99vw;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  width: 75%;
+  min-width: 500px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#current-song-wrapper {
+  margin: 40px;
+  width: 100%;
+  display: flex;
+}
+
+#current-song-album-cover {
+  width: 200px;
+  height: 200px;
+}
+
+#current-song-info {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#current-song-title {
+  margin-bottom: 20px;
+}
+
+#current-song > td {
+  background-color: lightblue;
+}
+
+table {
+  width: 100%;
+  position: relative;
+  border-collapse: collapse;
+}
+
+th {
+  border-bottom: 1px solid black;
+}
+
+td {
+  padding: 10px;
+}
+
+.cell-image {
+  width: 20px;
+  margin-left: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: black;
+  }
+}
